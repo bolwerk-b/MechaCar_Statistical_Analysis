@@ -1,5 +1,6 @@
 # MechaCar_Statistical_Analysis
-## Purpose: Analyze production troubles for AutosRUs new prototype (MechaCar) to identify MPG predictive variables, collect summary statistics on PSI of suspension coils, and run t-tests to determine statistical difference in mean population.
+#### Purpose: 
+Analyze production troubles for AutosRUs new prototype (MechaCar) to identify MPG predictive variables, collect summary statistics on PSI of suspension coils, and run t-tests to determine statistical difference in mean population.
 
 ## Linear Regression to Predict MPG
 ### Analysis of test results for 50 prototype MechaCars. The MechaCar prototypes were produced using multiple design specifications to identify ideal vehicle performance. 
@@ -22,28 +23,37 @@ R-squared is .7149, which is a strong correlation for the dataset and shows the 
 First the Suspicion Coil csv was converted into a dataframe and then created two subset tables with it: Total Summary and Lot Summary.
 ![deliv 2 summary](deliv-2-mean-med-var.png)
 
-The Total Summary table is looking at PSI statistics across all lots while the Lot Summary shows statistcs of each lot (seen below). As seen, Lot 1 and 2, are very similar while Lot 3 has a smaller mean with a bigger variance and standar deviation (SD).
+The Total Summary table is looking at PSI statistics across all lots while the Lot Summary shows statistcs of each lot (seen below). Lot 1 and 2 are very similar while Lot 3 has a smaller mean with a bigger variance and standard deviation (SD).
 ![Deliv 2 lot summary](deliv-2-lot-summary.png)
 
 ## T-Tests on Suspension Coils
 ### Based on the analysis above, the major impacts on MPG are car weight, spoiler angle, and AWD capability. 
 ![Del 3 ttest](deliv-3-ttest.png)
 
-The P-values from single T-Test on PSI values (compared to the standard of 1500 PSI) for suspicion coils were:-
+The P-values from single T-Test on PSI values (compared to the standard of 1500 PSI) for suspicion coils were:
 
 All PSI= 0.06028 Lot 1 PSI= 1 Lot 2 PSI= 0.6072 Lot 3 PSI= 0.04168 Assuming that the significant value should be below p = 0.05 (which is standard), then only Lot 3 is significantly different. All other lots perform the same (or are not significantly different) to the standard 1500 PSI. This, combined with the lower mean of Lot 3 and high variance, could indicate that Lot 3 is under-performing.
 ![Del 3 ttest each lot](deliv-3-ttest-lots.png)
 
 ## Study Design: MechaCar vs Competition
 As we have seen in commercials during the holiday season and Superbowl, there are many things a consume/driver would look for purchasing a new car.
-A few examples are city or highway fuel efficiency, horse power, maintenance cost, or safety rating (BIG in famil sized cars).
+A few examples are city or highway fuel efficiency, horse power, maintenance cost, or safety rating (BIG in family sized cars).
+
 Testable metrics would include:
+
 What metric or metrics are you going to test?
-	- Safety-rating, and highway fuel-efficiency as two major items that cunsumers are most interested in currently.
+	
+    - Safety-rating, and highway fuel-efficiency as two major items that cunsumers are most interested in currently.
+
 What is the null hypothesis or alternative hypothesis?
-	-The null hypothesis is that the mean of the safety rating is zero. The alternative hypothesis is that the mean of the safety rating is not zero.
+	
+    -The null hypothesis is that the mean of the safety rating is zero. The alternative hypothesis is that the mean of the safety rating is not zero.
 	-Additionally a null hypothesis is a horsepower rating of zero. The alternative hypothesis is that the mean of the horsepower rating is not zero.
+
 What statistical test would you use to test the hypothesis? And why?
-	- A multiple linear regression statical summary would show how the variables impact safety ratings and horsepower ratings for MechaCar and any other competitor automotive companies.
+	
+    - A multiple linear regression statical summary would show how the variables impact safety ratings and horsepower ratings for MechaCar and any other competitor automotive companies.
+
 What data is needed to run the statistical test?
-	-A random sample of n > 30 for MechaCar and their competitor, would need to be collected including the safety ratings, highway fuel efficiency, and horsepower plus running the data through RStudio.
+	
+    -A random sample of n > 30 for MechaCar and their competitor, would need to be collected including the safety ratings, highway fuel efficiency, and horsepower plus running the data through RStudio.
